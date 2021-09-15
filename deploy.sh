@@ -1,5 +1,5 @@
 echo 'START BUILDING'
-hugo --minify
+HUGO_ENV=production hugo --minify
 
 echo 'START UPDATING MAIN REPO'
 git add .
