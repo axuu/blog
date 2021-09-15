@@ -1,8 +1,7 @@
-baseURL: 'http://example.org/'
+baseURL: 'https://blog.fredz.cn/'
 languageCode: 'en-us'
 title: "Axu"
-theme: 
-   - github.com/nodejh/hugo-theme-mini
+theme: "mini"
 
 # Default content language, support en (English) / zh (Chinese) / nl (Dutch), default 'en'
 defaultContentLanguage: 'en'
