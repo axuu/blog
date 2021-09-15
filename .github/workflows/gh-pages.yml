@@ -24,15 +24,13 @@ jobs:
       - name: Build
         run: HUGO_ENV=production hugo --minify
 
-      - name: To Public Folder
-        run: cd public
-
-      - name: Commit files
+      - name: Commit Public Folder
         run: |
-        git config --local user.email "zhangxu.fred@gmail.com"
-        git config --local user.name "axuu"
-        git add .
-        git commit -m "generated files on `date +'%Y-%m-%d %H:%M:%S'`";
+          cd public
+          git config --local user.email "zhangxu.fred@gmail.com"
+          git config --local user.name "axuu"
+          git add .
+          git commit -m "generated files on `date +'%Y-%m-%d %H:%M:%S'`";
 
       - name: Push Changes
         uses: ad-m/github-push-action@master
