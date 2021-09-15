@@ -1,7 +1,7 @@
-baseURL: 'https://blog.fredz.cn/'
-languageCode: 'en-us'
-title: "Axu"
-theme: "mini"
+baseURL: https://blog.fredz.cn/
+languageCode: en-us
+title: Axu's Blog
+theme: mini
 
 # Default content language, support en (English) / zh (Chinese) / nl (Dutch), default 'en'
 defaultContentLanguage: 'en'
