@@ -26,7 +26,7 @@ jobs:
 
       - name: Commit Public Folder
         run: |
-          cd public
+          cd public -f
           git config --local user.email "zhangxu.fred@gmail.com"
           git config --local user.name "axuu"
           git add .
