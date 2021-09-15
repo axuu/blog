@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - main
   pull_request:
 
 jobs:
@@ -24,9 +24,18 @@ jobs:
       - name: Build
         run: HUGO_ENV=production hugo --minify
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+      - name: To Public Folder
+        run: cd public
+
+      - name: Commit files
+        run: |
+        git config --local user.email "zhangxu.fred@gmail.com"
+        git config --local user.name "axuu"
+        git add .
+        git commit -m "generated files on `date +'%Y-%m-%d %H:%M:%S'`";
+
+      - name: Push Changes
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          branch: master
