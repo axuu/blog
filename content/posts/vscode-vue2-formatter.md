@@ -1,5 +1,5 @@
 ---
-title: "在 VSCode 中自动格式化 Vue2 代码"
+title: "VSCode 自动格式化 Vue2 代码简明教程"
 date: 2021-09-16T10:37:18+08:00
 draft: true
 ---

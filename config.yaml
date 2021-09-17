@@ -19,10 +19,6 @@ markup:
   highlight:
     guessSyntax: true
     style: emacs
-  tableOfContents:
-    endLevel: 3
-    ordered: false
-    startLevel: 2
 
 # Social links in footer, support github,twitter,stackoverflow,facebook
 social:
