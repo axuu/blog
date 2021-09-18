@@ -19,6 +19,10 @@ markup:
   highlight:
     guessSyntax: true
     style: emacs
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
 
 # Social links in footer, support github,twitter,stackoverflow,facebook
 social:
@@ -48,7 +52,7 @@ params:
   # To enable comments, you may need to set `googleAnalytics`
   enableGoogleAnalytics: false
   # To enable table of content, you could set `showToc: true`, default is `false`
-  showToc: true
+  showToc: false
   # To hidden powerBy message in the page footer, you could set: `showPowerBy: false`, default is `true`
   showPowerBy: true
   # To enable math typesetting , you could set `math: true`, default is `false`
