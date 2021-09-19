@@ -9,8 +9,9 @@ git push
 
 echo '---- START UPDATING PUBLIC REPO ----'
 cd public
-git add . -f
+git pull
+git add .
 git commit -m "generated files on `date +'%Y-%m-%d %H:%M:%S'`"
-git push
+git push -u origin main
 
 echo '---- DEPLOY SUCCESS ----'
