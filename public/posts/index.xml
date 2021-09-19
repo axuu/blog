@@ -17,11 +17,11 @@
     </item>
     
     <item>
-      <title>VSCode 自动格式化 Vue2 代码简明教程</title>
-      <link>https://blog.fredz.cn/posts/vscode-%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96-vue2-%E4%BB%A3%E7%A0%81%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/</link>
+      <title>用 VSCode 自动格式化 Vue2 代码</title>
+      <link>https://blog.fredz.cn/posts/%E7%94%A8-vscode-%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96-vue2-%E4%BB%A3%E7%A0%81/</link>
       <pubDate>Thu, 16 Sep 2021 10:37:18 +0800</pubDate>
       
-      <guid>https://blog.fredz.cn/posts/vscode-%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96-vue2-%E4%BB%A3%E7%A0%81%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/</guid>
+      <guid>https://blog.fredz.cn/posts/%E7%94%A8-vscode-%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96-vue2-%E4%BB%A3%E7%A0%81/</guid>
       <description>安装扩展 Extensions 🔗 Prettier - Code formatter Vetur 配置 🔗1.打开配置文件 🔗可以全局或按项目配置 全局：修改 setting.json 按项目：项目下 .vscode 文件夹 -&amp;gt; 修改 setting.json 2.对文件整体进行格式化 🔗这种方</description>
     </item>
     
