@@ -1,3 +1,4 @@
+# git submodule add https://github.com/nodejh/hugo-theme-mini.git themes/mini
 echo '---- START BUILDING ----'
 HUGO_ENV=production hugo -D
 
