@@ -35,4 +35,4 @@ jobs:
           cname: blog.fredz.cn
           user_name: 'axuu'
           user_email: 'zhangxu.fred@gmail.com'
-          commit_message: "generated files on `date +'%Y-%m-%d %H:%M:%S'`"
+          # commit_message: "generated files on `date +'%Y-%m-%d %H:%M:%S'`"
