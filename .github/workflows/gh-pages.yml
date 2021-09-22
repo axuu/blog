@@ -30,9 +30,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          # external_repository: axuu/blog
-          publish_branch: blog  # default: gh-pages
+          publish_branch: pages  # default: gh-pages
           cname: blog.fredz.cn
           user_name: 'axuu'
           user_email: 'zhangxu.fred@gmail.com'
-          # commit_message: "generated files on `date +'%Y-%m-%d %H:%M:%S'`"
