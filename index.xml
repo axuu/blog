@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Axu&#39;s Blog</title>
+    <link>https://blog.fredz.cn/</link>
+    <description>Recent content on Axu&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Sep 2021 15:05:53 +0800</lastBuildDate><atom:link href="https://blog.fredz.cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>R2S&#43;AX3600 家庭网络升级</title>
+      <link>https://blog.fredz.cn/posts/r2s-ax3600-%E5%AE%B6%E5%BA%AD%E7%BD%91%E7%BB%9C%E5%8D%87%E7%BA%A7/</link>
+      <pubDate>Sun, 19 Sep 2021 15:05:53 +0800</pubDate>
+      
+      <guid>https://blog.fredz.cn/posts/r2s-ax3600-%E5%AE%B6%E5%BA%AD%E7%BD%91%E7%BB%9C%E5%8D%87%E7%BA%A7/</guid>
+      <description>2018 年购入了 K2P，刷好固件可以应付 300M 的带宽，信号够用，在使用的两年中一直稳定无异常。20 年底搬进新家之后，宽带升级到了500M，原来的方案并</description>
+    </item>
+    
+    <item>
+      <title>用 VSCode 自动格式化 Vue2 代码</title>
+      <link>https://blog.fredz.cn/posts/%E7%94%A8-vscode-%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96-vue2-%E4%BB%A3%E7%A0%81/</link>
+      <pubDate>Thu, 16 Sep 2021 10:37:18 +0800</pubDate>
+      
+      <guid>https://blog.fredz.cn/posts/%E7%94%A8-vscode-%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96-vue2-%E4%BB%A3%E7%A0%81/</guid>
+      <description>安装扩展 Extensions 🔗 Prettier - Code formatter Vetur 配置 🔗1.打开配置文件 🔗可以全局或按项目配置 全局：修改 setting.json 按项目：项目下 .vscode 文件夹 -&amp;gt; 修改 setting.json 2.对文件整体进行格式化 🔗这种方</description>
+    </item>
+    
+    <item>
+      <title>任务管理与生活节奏</title>
+      <link>https://blog.fredz.cn/posts/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86%E4%B8%8E%E7%94%9F%E6%B4%BB%E8%8A%82%E5%A5%8F/</link>
+      <pubDate>Wed, 15 Sep 2021 12:57:40 +0800</pubDate>
+      
+      <guid>https://blog.fredz.cn/posts/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86%E4%B8%8E%E7%94%9F%E6%B4%BB%E8%8A%82%E5%A5%8F/</guid>
+      <description>近期的状态可以说非常的不好，形成了连续性的熬夜，熬夜的疲劳又在反噬日常状态，不断恶性循环。 至于为什么熬夜，原因在于内心的两种声音：「这件事非</description>
+    </item>
+    
+  </channel>
+</rss>
