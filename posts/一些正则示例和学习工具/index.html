@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>一些正则示例和学习工具 | Axu&#39;s Blog</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="几个有用的工具 🔗https://regexone.com/ 交互式正则教程 https://regexr.com/ 强大的正则检查工具 https://jex.im/regulex/ 正则表达式可视化工具 https://projects.lukehaas.me/regexhub/ 常用的正则合集 示例 🔗\b">
+<meta name="generator" content="Hugo 0.88.1" />
+
+
+  <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+    
+    <link rel="stylesheet" href="https://blog.fredz.cn/css/custom.css">
+  
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="/"> <span class="arrow">←</span>Home</a>
+	
+	<a href="/posts">Archive</a>
+	<a href="/tags">Tags</a>
+	<a href="/about">About</a>
+
+	
+
+	
+	  <a class="button" href="https://blog.fredz.cn/index.xml">Subscribe</a>
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">一些正则示例和学习工具</h1>
+
+    <div class="tip">
+        <time datetime="2021-09-23 23:46:43 &#43;0800 &#43;0800">Sep 23, 2021</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          974 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          2 minute read
+        </span>
+    </div>
+
+    
+    
+
+
+    <div class="content">
+      <h1 id="几个有用的工具">几个有用的工具 <a href="#%e5%87%a0%e4%b8%aa%e6%9c%89%e7%94%a8%e7%9a%84%e5%b7%a5%e5%85%b7" class="anchor">🔗</a></h1><p><a href="https://regexone.com/" target="_blank" rel="noopener">https://regexone.com/</a></p>
+<p>交互式正则教程</p>
+<p><a href="https://regexr.com/" target="_blank" rel="noopener">https://regexr.com/</a></p>
+<p>强大的正则检查工具</p>
+<p><a href="https://jex.im/regulex/" target="_blank" rel="noopener">https://jex.im/regulex/</a></p>
+<p>正则表达式可视化工具</p>
+<p><a href="https://projects.lukehaas.me/regexhub/" target="_blank" rel="noopener">https://projects.lukehaas.me/regexhub/</a></p>
+<p>常用的正则合集</p>
+<h1 id="示例">示例 <a href="#%e7%a4%ba%e4%be%8b" class="anchor">🔗</a></h1><p><strong>\ba\w*\b</strong></p>
+<p>匹配以字母a开头的单词——先是某个单词开始处(\b)，然后是字母a,然后是任意数量的字母或数字(\w*)，最后是单词结束处(\b)</p>
+<h2 id="重复">重复 <a href="#%e9%87%8d%e5%a4%8d" class="anchor">🔗</a></h2><p><strong>\d+</strong></p>
+<p>匹配1个或更多连续的数字。这里的+是和<em>类似的元字符，不同的是</em>匹配重复任意次(可能是0次)，而+则匹配重复1次或更多次</p>
+<p><strong>\b\w{6}\b</strong></p>
+<p>匹配刚好6个字符的单词</p>
+<p><strong>^\d{5,12}$</strong></p>
+<p>填写的QQ号必须为5位到12位数字</p>
+<p><strong>Windows\d+</strong></p>
+<p>匹配Windows后面跟1个或更多数字</p>
+<h2 id="转义">转义 <a href="#%e8%bd%ac%e4%b9%89" class="anchor">🔗</a></h2><p><strong>C:\Windows</strong></p>
+<p>匹配C:\Windows</p>
+<h2 id="字符类">字符类 <a href="#%e5%ad%97%e7%ac%a6%e7%b1%bb" class="anchor">🔗</a></h2><p><strong>(?0\d{2}[)-]?\d{8}</strong></p>
+<p>可以匹配几种格式的电话号码，像*(010)88886666*，或*022-22334455*，或*02912345678*等</p>
+<h2 id="分支条件">分支条件 <a href="#%e5%88%86%e6%94%af%e6%9d%a1%e4%bb%b6" class="anchor">🔗</a></h2><p><strong>0\d{2}-\d{8}|0\d{3}-\d{7}</strong></p>
+<p>匹配两种以连字号分隔的电话号码：一种是三位区号，8位本地号(如010-12345678)，一种是4位区号，7位本地号(0376-2233445)</p>
+<p><strong>(0\d{2})[- ]?\d{8}|0\d{2}[- ]?\d{8}</strong></p>
+<p>匹配3位区号的电话号码，其中区号可以用小括号括起来，也可以不用，区号与本地号间可以用连字号或空格间隔，也可以没有间隔</p>
+<p><strong>\d{5}-\d{4}|\d{5}</strong></p>
+<p>匹配美国的邮政编码。美国邮编的规则是5位数字，或者用连字号间隔的9位数字。</p>
+<p><strong>使用分枝条件时，要注意各个条件的顺序</strong>。如果改成\d{5}|\d{5}-\d{4}，只会匹配5位的邮编(以及9位邮编的前5位)。原因：从左到右地测试，如果满足了某个条件，就不会去再管其它的</p>
+<h2 id="分组">分组 <a href="#%e5%88%86%e7%bb%84" class="anchor">🔗</a></h2><p><strong>(\d{1,3}.){3}\d{1,3}</strong></p>
+<p>简单的IP地址匹配表达式，但它也将匹配<em>256.300.888.999</em>这种不可能存在的IP地址</p>
+<p><strong>((2[0-4]\d|25[0-5]|[01]?\d\d?).){3}(2[0-4]\d|25[0-5]|[01]?\d\d?)</strong></p>
+<p>正则表达式中不提供任何数学功能，所以只能使用冗长的分组，选择，字符类来描述</p>
+<h2 id="捕获与引用">捕获与引用 <a href="#%e6%8d%95%e8%8e%b7%e4%b8%8e%e5%bc%95%e7%94%a8" class="anchor">🔗</a></h2><p><strong>\b(\w+)\b\s+\1\b</strong></p>
+<p>匹配重复的单词</p>
+<h2 id="零宽断言">零宽断言 <a href="#%e9%9b%b6%e5%ae%bd%e6%96%ad%e8%a8%80" class="anchor">🔗</a></h2><p><strong>\b\w+(?=ing\b)</strong></p>
+<p>匹配以ing结尾的单词的前面部分（除了ing以外的部分）</p>
+<p><strong>(?&lt;=\bre)\w+\b</strong></p>
+<p>会匹配以re开头的单词的后半部分（除了re以外的部分）</p>
+<h2 id="负向零宽断言">负向零宽断言 <a href="#%e8%b4%9f%e5%90%91%e9%9b%b6%e5%ae%bd%e6%96%ad%e8%a8%80" class="anchor">🔗</a></h2><p><strong>\b\w*q[^u]\w*\b</strong></p>
+<p>匹配包含字母q，但q后面不是字母u的单词 <strong>\b\w*q(?!u)\w*\b</strong></p>
+<p><strong>\d{3}(?!\d)</strong></p>
+<p>匹配三位数字，而且这三位数字的后面不能是数字</p>
+<p><strong>\b((?!abc)\w)+\b</strong></p>
+<p>匹配不包含连续字符串abc的单词</p>
+<p><strong>(?&lt;=&lt;(\w+)&gt;).*(?=&lt;/\1&gt;)</strong></p>
+<p>匹配不包含属性的简单HTML标签内里的内容</p>
+
+    </div>
+
+    
+    
+    
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+        <div id="social">
+
+
+    <a class="symbol" href="https://github.com/axuu" rel="me" target="_blank">
+        
+        <svg fill="#bbbbbb" width="28" height="28"  viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>Github</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Social-Icons---Rounded-Black" transform="translate(-264.000000, -939.000000)">
+            <g id="Github" transform="translate(264.000000, 939.000000)">
+                <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" fill="#bbbbbb"></path>
+                <path d="M35.9985,13 C22.746,13 12,23.7870921 12,37.096644 C12,47.7406712 18.876,56.7718301 28.4145,59.9584121 C29.6145,60.1797862 30.0525,59.4358488 30.0525,58.7973276 C30.0525,58.2250681 30.0315,56.7100863 30.0195,54.6996482 C23.343,56.1558981 21.9345,51.4693938 21.9345,51.4693938 C20.844,48.6864054 19.2705,47.9454799 19.2705,47.9454799 C17.091,46.4500754 19.4355,46.4801943 19.4355,46.4801943 C21.843,46.6503662 23.1105,48.9634994 23.1105,48.9634994 C25.2525,52.6455377 28.728,51.5823398 30.096,50.9649018 C30.3135,49.4077535 30.9345,48.3460615 31.62,47.7436831 C26.2905,47.1352808 20.688,45.0691228 20.688,35.8361671 C20.688,33.2052792 21.6225,31.0547881 23.1585,29.3696344 C22.911,28.7597262 22.0875,26.3110578 23.3925,22.9934585 C23.3925,22.9934585 25.4085,22.3459017 29.9925,25.4632101 C31.908,24.9285993 33.96,24.6620468 36.0015,24.6515052 C38.04,24.6620468 40.0935,24.9285993 42.0105,25.4632101 C46.5915,22.3459017 48.603,22.9934585 48.603,22.9934585 C49.9125,26.3110578 49.089,28.7597262 48.8415,29.3696344 C50.3805,31.0547881 51.309,33.2052792 51.309,35.8361671 C51.309,45.0917119 45.6975,47.1292571 40.3515,47.7256117 C41.2125,48.4695491 41.9805,49.9393525 41.9805,52.1877301 C41.9805,55.4089489 41.9505,58.0067059 41.9505,58.7973276 C41.9505,59.4418726 42.3825,60.1918338 43.6005,59.9554002 C53.13,56.7627944 60,47.7376593 60,37.096644 C60,23.7870921 49.254,13 35.9985,13" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+    </a>
+
+
+</div>
+
+    
+
+    <div class="copyright">
+    
+        © 2021 Axu
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://github.com/nodejh/hugo-theme-cactus-plus'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+  </body>
+</html>
