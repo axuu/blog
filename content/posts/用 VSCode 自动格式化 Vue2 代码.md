@@ -1,7 +1,7 @@
 ---
 title: "用 VSCode 自动格式化 Vue2 代码"
 date: 2021-09-16T10:37:18+08:00
-draft: true
+draft: false
 ---
 
 ## 安装扩展 Extensions

@@ -22,7 +22,7 @@ jobs:
           # extended: true
 
       - name: Build
-        run: HUGO_ENV=production hugo -D
+        run: HUGO_ENV=production hugo
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
